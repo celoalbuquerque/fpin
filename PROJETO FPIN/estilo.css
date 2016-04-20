@@ -1,0 +1,204 @@
+body{
+	background-color: #cccccc;
+}
+
+h1,h2,h3{
+	font-family: Verdana;
+}
+h1{
+	text-align: center;
+}
+
+p{
+	text-align: justify;
+}
+
+section{
+	background-color: #ffffff;
+	font-family: Arial;
+	padding: 10px;
+	min-height: 400px;
+	
+}
+
+header{
+	background-color: #32cd32;
+	padding: 10px;
+	text-align: left;
+	
+}
+
+form a{
+	font-size: 12px;
+	margin-left: 33px;
+}
+
+#logo{
+margin-left: 40%;
+margin-top: 5%;
+}
+
+#conteudo{
+	min-height: 450px;
+	text-align: justify;
+}
+#conteudo h2{
+	margin-top: 80px;
+	text-align: center;
+	color: #ff0000;
+}
+
+
+#cadastro{
+	margin-top: 50px;
+	background-color: #EEEEE0;
+	width: 38%;
+	padding: 10px;
+	margin-left: 30%;
+}
+
+#cadastro input[type=text]{
+	width: 350px;
+}
+
+#cadastro button{
+	margin-left: 0px;
+}
+
+label{
+	display: block;
+	width: 180px; 
+}
+
+
+#login{
+	display: block;
+	width: 20%;
+	margin-left: 35%;
+	padding: 10px;
+	background-color: #EEEEE0;
+	position: relative;
+}
+
+#login input[type=text] [type=password]{
+	min-width: 20%;
+	margin-left: 40%;
+}
+
+#login input[type=submit]{
+	width: 50px;
+}
+#login a{
+	margin-left: 1px;
+}
+#login button{
+	width: 50px;
+	 
+}
+
+#menu_interno{
+	padding: 0px;
+	margin: 0px;
+	height: auto;
+	text-align: right;
+}
+
+#menu_interno li{
+	display: inline;
+	padding: 10px;
+	margin: 0px;
+	font-size: 14px;
+}
+
+#voltar{
+	margin-left: 50%;
+	font-size: 18px;
+}
+
+#enviar_noticia{
+	margin-left: 10%;
+	width: 80%;
+	height: 100%;
+}
+
+#form_noticia button{
+	margin-left: 10%;
+}
+#form_noticia p{
+	margin-left: 10%;
+}
+#form_noticia input{
+	margin-left: 10%;
+}
+footer{
+	background-color: #000000;
+	color: #ffffff;
+	font-family: Verdana;
+	font-size: 12px;
+	text-align: center; 
+	padding: 8px;
+}
+
+footer p{
+	text-align: center;
+}
+
+img, video{
+	max-width: 100%;
+}
+
+nav{
+	background-color: #000000;
+	height: 35px;
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+nav ul{
+	height: auto; /*vai se adaptar automaticamente de acordo com a resolução*/
+	padding: 8px 0px; 
+	margin: 0px;
+}
+
+nav li{
+	display: inline;
+	padding: 10px;
+	margin: 0px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 8px 8px 8px 8px;
+}
+
+nav a:hover{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+@media all and (min-width: 960px){
+	body{
+	width: 960px;
+	margin: auto;
+	}
+}
+
+@media all and (max-width: 940px){ /*resolucao ate 480px*/
+	nav{
+		height: 100%;		
+	}
+	nav li{
+		display: block;
+		padding: 10px;
+		margin: 0px;
+	}
+
+	#login{
+	margin-left: 10%;
+}
+
+
+
+}

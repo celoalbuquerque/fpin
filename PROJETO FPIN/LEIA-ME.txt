@@ -1,0 +1,72 @@
+   
+  ___________________________________
+         ENTENDENDO O SISTEMA  
+  ___________________________________
+
+1 - INSTALAÇÃO NO SERVIDOR WEB
+
+
+ ---- QUAIS USUÁRIOS/SERVIDORES UTILIZAM O SISTEMA ----
+
+  O sistema é destinado à Alunos, Usuários Anônimos e Servidores da Coordenadoria de Serviço Social do IFAL.
+
+ ---- REQUISITOS FUNCIONAIS ----
+
+ - Aluno:
+
+* Cadastro no sistema por meio de matrícula da instituição;
+* Selecionar entrevista nas datas disponíveis do cronograma;
+* Agendar. (Sistema gera confirmação e número de agendamento);
+* Cancelar Agendamento;
+* Ver status de sua entrevista (aprovado ou não).
+
+- Servidores:
+
+* Disponibilizar no sistema cronograma das entrevistas com datas para agendamento;
+* Disponibilizar no sistema editais em pdf, informações gerais e notícias;
+* Baixar relatórios de agendamentos;
+* Disponibilizar no sistema resultados das entrevistas.
+
+- Usuários Anônimos
+
+*  Visualização dos editais das ofertas de auxilios;
+*  Visualização da relação de auxílios aprovados;
+*  Visualização das informações gerais e notícias.
+
+
+ ---- ESTRUTURA DO SITE ----
+
+* PÁGINA PRINCIPAL (HOME):
+
+  Contem as informações principais do sistema, onde o usuário poderá iniciar sua navegação entre todas as páginas do site.
+
+* NOTÍCIAS:
+
+  Área destinada à divugação de eventos e acontecimentos relevantes envolvendo a comunidade acadêmica do ifal.
+
+* EDITAIS E RESULTADOS:
+
+  Contem links para download em PDF dos últimos resultados de processos seletivos, listas de documentos necessários para inscrições, dentre outras informações relacionadas ao cadastro dos auxílios. 
+
+* ÁREA DO ALUNO:
+
+  Área de login do aluno. Contem também link para alunos não cadastrados.
+
+* ÁREA DO SERVIDOR:
+
+  Área de login do servidor.
+
+* CONTATO:
+
+  Contem links de emails, redes sociais, número de contato de servidores do ifal.
+
+* SOBRE: 
+
+  Contem informações dos desenvolvedores do sistema e link de download do arquivo "LEIA-ME".
+
+
+
+
+
+  
+
