@@ -28,20 +28,18 @@
 
 <section>
 <h2>Informe seus dados para acesso ao sistema de agendamentos:</h2>
-	<form id="cadastro">
+	<form id="cadastro" method="POST" action="processa.php">
 		<label for="Matricula">Matrícula</label>
-		<input type="text" name="matricula">
+		<input type="text" name="matricula" maxlength="11">
 		<label for="Nome">Nome Completo</label>
-		<input type="text" name="Nome">
+		<input type="text" name="nome" maxlength="64">
 		<label for="Telefone">Telefone</label>
-		<input type="text" name="Telefone">
+		<input type="text" name="telefone" maxlength="11">
 		<label for="email">E-mail</label>
-		<input type="text" name="email">
+		<input type="text" name="email" maxlength="64">
 		<label for="senha">Senha</label>
-		<input type="password" name="senha">
-		<label for="confirmarsenha">Confirme a senha</label>
-		<input type="password" name="confirmasenha">
-		<button><a href="aluno_logado.html">Enviar</a></button>
+		<input type="password" name="senha" maxlength="8">
+		<input type="submit" name="Enviar" value="Enviar">
 		
 	</form>
 </section>

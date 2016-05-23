@@ -29,21 +29,30 @@
 <section>
 	<h2>Área do aluno</h2>
 		
-	<form>
+	<form action="login.php" method="POST">
 		<fieldset id="login">
 		<legend>LOGIN</legend>
-		<label for="usuario">Nome de Usuário</label>
-		<input type="text" name="usuario" placeholder="Usuário" required="">
+		<label for="usuario">Matrícula</label>
+		<input type="text" name="matricula_usuario" placeholder="Matrícula" required="">
 		<label for="senha">Senha</label>
 		<input type="password" name="senha" placeholder="Senha" required=""><br>
-		<!--<input type="submit" name="Entrar" value="Entrar"</a> -->
-		<button><a href="aluno_logado.html">Enviar</a></button>
+		<input type="submit" name="Entrar" value="Entrar">
+		
 		<a href="#">Esqueci a senha</a>
 		</fieldset>
 	</form>	
 <br><br><br><br>
 <h3>Ainda não cadastrado? Clique <a href="cadastrar.html">aqui</a></h3>
 </section>
+
+
+<?php
+
+mysql_connect("root", "fpin", "");
+
+mysql_select_db("fpin");
+
+?>
 
 <footer>
 	<p>Projeto de FPIN</p>
