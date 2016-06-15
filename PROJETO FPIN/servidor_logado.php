@@ -1,17 +1,21 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <html>
 <head>
-	<title>Área do Aluno</title>
+	<title>HOME</title>
 	<meta charset="utf-8">
-	<meta name="descrition" content="area do aluno">
+	<meta name="descrition" content="Home">
 	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 
 <body>
 <header>
-<h1> Área do aluno </h1>
+<h1> Coordenadoria de Serviço Social - IFAL </h1>
 </header>
 
 <nav>
@@ -27,26 +31,14 @@
 </nav>
 
 <section>
-	<h2>Área do aluno</h2>
-		
-	<form action="login.php" method="POST">
-		<fieldset id="login">
-		<legend>LOGIN</legend>
-		<label for="usuario">Matrícula</label>
-		<input type="text" name="matricula_usuario" placeholder="Matrícula" required="">
-		<label for="senha">Senha</label>
-		<input type="password" name="senha" placeholder="Senha" required=""><br>
-		<input type="submit" name="Entrar" value="Entrar">
-		
-		<a href="#">Esqueci a senha</a>
-		</fieldset>
-	</form>	
-<br><br><br><br>
-<h3>Ainda não cadastrado? Clique <a href="cadastrar.html">aqui</a></h3>
+	<h2><?php echo "Seja bem vindo, " .$_SESSION["usuario"]. 	"!";?></h2>
+	<ul id="menu_interno">
+	<li><a href="nova_noticia.html">Inserir Nova Notícia</a></li>
+	<li><a href="relatorio_agendamentos.php">Gerar Relatório de Agendamentos</a></li>
+	<li><a href="disponibiliza_resultado.html">Disponibilizar Resultados</a></li>
+	<li><a href="index.html">Sair</a></li>
+	</ul>	
 </section>
-
-
-
 
 <footer>
 	<p>Projeto de FPIN</p>

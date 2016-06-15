@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 17-Maio-2016 às 05:40
+-- Generation Time: 15-Jun-2016 às 06:21
 -- Versão do servidor: 10.1.13-MariaDB
 -- PHP Version: 7.0.5
 
@@ -19,6 +19,47 @@ SET time_zone = "+00:00";
 --
 -- Database: `fpin`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `adm`
+--
+
+CREATE TABLE `adm` (
+  `administrador` varchar(30) NOT NULL,
+  `SENHA` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `adm`
+--
+
+INSERT INTO `adm` (`administrador`, `SENHA`) VALUES
+('ADMIN', '12345');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `agendamento`
+--
+
+CREATE TABLE `agendamento` (
+  `login_aluno` varchar(30) NOT NULL,
+  `DATA` varchar(30) NOT NULL,
+  `ASSISTENTE` varchar(30) NOT NULL,
+  `HORARIO` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `agendamento`
+--
+
+INSERT INTO `agendamento` (`login_aluno`, `DATA`, `ASSISTENTE`, `HORARIO`) VALUES
+('1111', '10/05/2016', 'Josefa', '8:00hs as 11:30hs'),
+('4444', '13/05/2016', 'Auxiliadora', '14:00hs as 17:30hs'),
+('5555', '12/05/2016', 'Maria', '14:00hs as 17:30hs'),
+('6666', '12/05/2016', 'Auxiliadora', '14:00hs as 17:30hs');
 
 -- --------------------------------------------------------
 
@@ -52,6 +93,18 @@ INSERT INTO `cadastro_alunos` (`MATRICULA`, `NOME`, `TELEFONE`, `EMAIL`, `SENHA`
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `adm`
+--
+ALTER TABLE `adm`
+  ADD PRIMARY KEY (`administrador`);
+
+--
+-- Indexes for table `agendamento`
+--
+ALTER TABLE `agendamento`
+  ADD PRIMARY KEY (`login_aluno`);
 
 --
 -- Indexes for table `cadastro_alunos`

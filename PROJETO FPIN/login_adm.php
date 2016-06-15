@@ -6,11 +6,11 @@
 
 $con=mysqli_connect("localhost","root","","fpin");
 
-$matricula=$_POST['matricula_usuario'];
+$administrador=$_POST['usuario'];
 
 $senha=$_POST['senha'];
 
-$sql=mysqli_query($con, "select * from cadastro_alunos where matricula='$matricula' and senha='$senha'");
+$sql=mysqli_query($con, "select * from adm where administrador='$administrador' and senha='$senha'");
 
 $row=mysqli_num_rows($sql);
 
@@ -18,11 +18,11 @@ if ($row > 0)
 
 {
 session_start();
-$_SESSION["usuario"]=$_POST["matricula_usuario"];
+$_SESSION["usuario"]=$_POST["usuario"];
 
 $_SESSION['login'] = true;
 
-echo "<script>window.location.href= 'aluno_logado.php';</script>";
+echo "<script>window.location.href= 'servidor_logado.php';</script>";
 
 }
 
